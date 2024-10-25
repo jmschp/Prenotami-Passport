@@ -18,6 +18,8 @@
   },
   "dependencies": {
     "playwright": "^1.48.1",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "screenshot-desktop": "^1.15.0",
     "telegraf": "^4.16.3"
   },
