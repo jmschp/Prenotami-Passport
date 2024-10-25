@@ -2,3 +2,7 @@
 
 *.json text
 *.ts text
+
+# yarn
+/.yarn/releases/** binary
+/.yarn/plugins/** binary
