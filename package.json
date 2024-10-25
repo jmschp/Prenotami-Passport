@@ -9,11 +9,11 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -fr dist && swc src -d dist",
-    "build-dev": "npm run build && node --inspect dist/index.js",
-    "dev": "rm -fr dist && nodemon --ext ts --exec \"npm run build-dev\"",
+    "build-dev": "yarn build && node --inspect dist/src/index.js",
+    "dev": "rm -fr dist && nodemon --ext ts --exec \"yarn build-dev\"",
     "dev:js": "node index.js",
-    "start": "nodemon --ext ts --exec \"npm run build-dev\"",
-    "printPage": "npm run build && node --inspect dist/src/printPage.js",
+    "start": "nodemon --ext ts --exec \"yarn build-dev\"",
+    "printPage": "yarn build && node --inspect dist/src/printPage.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -31,5 +31,6 @@
     "sort-package-json": "^2.10.1",
     "typescript": "^5.6.3",
     "yarn-upgrade-all": "^0.7.4"
-  }
+  },
+  "packageManager": "yarn@4.5.1"
 }
